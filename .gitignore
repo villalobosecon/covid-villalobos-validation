@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# R
+.Rhistory
+.Rproj.user/
+.RData
+renv/library/
+
+# Stata
+*.log
+*.smcl
+*.tmp
