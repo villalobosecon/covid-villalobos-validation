@@ -12,21 +12,27 @@ renv/library/
 *.smcl
 *.tmp
 
-# Keep folders visible but ignore their contents
-data_raw/**
+# ---------- Keep folders visible but keep data private ----------
+# Raw and derived data: keep folder, ignore contents
+data_raw/*
 !data_raw/.gitkeep
 
-data_interim/**
+data_interim/*
 !data_interim/.gitkeep
 
-data_final/**
+data_final/*
 !data_final/.gitkeep
 
-figs/**
+# Figures and results: keep folder, ignore contents by default
+figs/*
 !figs/.gitkeep
 
-results/**
+results/*
 !results/.gitkeep
 
-doc/**
+# ---------- Docs: allow Markdown, keep other files ignored ----------
+# Ignore direct children, then unignore .md (also inside subfolders)
+doc/*
+!doc/*.md
+!doc/**/*.md
 !doc/.gitkeep
