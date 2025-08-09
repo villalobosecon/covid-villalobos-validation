@@ -11,3 +11,22 @@ renv/library/
 *.log
 *.smcl
 *.tmp
+
+# Keep folders visible but ignore their contents
+data_raw/**
+!data_raw/.gitkeep
+
+data_interim/**
+!data_interim/.gitkeep
+
+data_final/**
+!data_final/.gitkeep
+
+figs/**
+!figs/.gitkeep
+
+results/**
+!results/.gitkeep
+
+doc/**
+!doc/.gitkeep
